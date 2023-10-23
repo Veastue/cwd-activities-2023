@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav and Sidenav</title>
+    <!-- CSS Here!-->
+    <link rel="stylesheet" href="style.css">
+    
+    <!--Materialize CDN-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Fontawesome icons kit-->
+     <script src="https://kit.fontawesome.com/f1afa0846d.js" crossorigin="anonymous"></script>
+
+     <!-- Fontawesome icons CDN-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <h1 class="center red-text text-lighten-2">NavBar</h1>
+    <br>
+    <div class="divider"></div>
+    <br>
+    <div class="container">
+        <p>
+            The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.
+        </p>
+        <h3 class="red-text">Right Aligned Links</h3>
+        <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.</p>
+
+        <nav class="light-blue lighten-2">
+            <div class="nav-wrapper">
+                <a href="" class="brand-logo" target="_blank"> 
+                    Logo
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="">Sass</a></li>
+                    <li><a href="">Component</a></li>
+                    <li><a href="">Javascript</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h3 class="red-text">Left Aligned Links</h3>
+        <p>To left align your navbar links, just add a left class to your <'ul> that contains them.</p>
+
+        <nav class="light-blue lighten-2">
+            
+                <div class="nav-wrapper">
+                    <a href="" class="brand-logo right" target="_blank"> 
+                        Logo
+                    </a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="">Sass</a></li>
+                        <li><a href="">Component</a></li>
+                        <li><a href="">Javascript</a></li>
+                    </ul>
+                </div>
+            
+        </nav>
+
+        <h3 class="red-text">Centering the logo</h3>
+        <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your <'a class="brand-logo">. You will have to make sure yourself that links do not overlap if you use this.</p>
+
+        <nav class="pink lighten-2">
+            <div class="nav-wrapper">
+                <a href="" class="brand-logo center" target="_blank"> 
+                        Logo
+                </a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="">Sass</a></li>
+                    <li><a href="">Component</a></li>
+                    <li><a href="">Javascript</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h3 class="red-text">Active Items</h3>
+        <p>Add active class to your li tags to denote the current page.</p>
+
+        <nav class="teal darken-2">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="" class="brand-logo" target="_blank"> 
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="">Sass</a></li>
+                        <li><a href="">Component</a></li>
+                        <li class="active"><a href="">Javascript</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Extended 1-->
+        <h3 class="red-text">Extended Navbar with Tabs</h3>
+        <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+
+        <nav class="nav-extended teal darken-2">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="" class="brand-logo" target="_blank"> 
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="">Sass</a></li>
+                        <li><a href="">Component</a></li>
+                        <li class="active"><a href="">Javascript</a></li>
+                    </ul>
+                </div>
+                <div class="nav-content">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab"><a href="#Test1">Test 1</a></li>
+                        <li class="tab"><a href="#Test2">Test 2</a></li>
+                        <li class="tab"><a href="#Test3">Test 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="Test1" class="col s12"></div>
+        <div id="Test2" class="col s12"></div>
+        <div id="Test3" class="col s12"></div>
+
+        <!-- Extended 2-->
+        <h3 class="red-text text-lighten-2">Extended Navbar with Tabs</h3>
+        <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+        <nav class="nav-extended teal">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">
+                        <i class="fa-brands fa-wizards-of-the-coast fa-lg"></i>
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a href="sass.html">Sass</a></li>
+                        <li>
+                            <a href="badges.html">Components</a></li>
+                        <li>
+                            <a href="collapsible.html">JavaScript</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab">
+                        <a href="#test1">Card 1</a>
+                    </li>
+                    <li class="tab">
+                        <a href="#test2">Card 2</a>
+                    </li>
+                    <li class="tab">
+                        <a href="#test3">Card 3</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <div class="col s12 m8 offset-m2 l6 offset-l3">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                    <div class="row valign-wrapper">
+                    <div class="col s7">
+                        <img src="https://plus.unsplash.com/premium_photo-1695607485012-33f35e1e5067?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="" class=" responsive-img"> <!-- notice the "circle" class -->
+                    </div>
+                    <div class="col s5">
+                        <span class="black-text">
+                        Good day! Lord Voldemort.
+                        </span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
+        
+        <!--tab Structure-->
+        <div class="row">
+            <div class="col s12" id="test1">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1560180474-e8563fd75bab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12" id="test2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1671212748162-d7bdb9d4f5ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    <div style="height: 200px"></div>
+    <!-- JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Materialize CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.tabs').tabs();
+            $('.sidenav').sidenav();
+        })
+    </script>
+</body>
+</html>

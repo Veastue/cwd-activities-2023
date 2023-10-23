@@ -1,0 +1,13 @@
+h1, h2, h3, h4, h5, h6, p{
+    font-weight: 200;
+}
+
+.cust-link {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+
+.test-back {
+    background-image: url('Images\Demo2.png');
+}

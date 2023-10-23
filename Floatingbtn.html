@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flaoting Button</title>
+    <!-- CSS Here!-->
+    <link rel="stylesheet" href="style.css">
+    
+    <!--Materialize CDN-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Fontawesome icons kit-->
+     <script src="https://kit.fontawesome.com/f1afa0846d.js" crossorigin="anonymous"></script>
+
+     <!-- Fontawesome icons CDN-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="fixed-action-btn">
+        <a href="" class="btn-floating btn-large red">
+            <i class="fa-brands fa-slack right"></i>
+        </a>
+        <ul>
+            <li class="btn-floating red">1</li>
+            <li class="btn-floating yellow darken-1">2</li>
+            <li class="btn-floating green">3</li>
+        </ul>
+    </div>
+
+    <!-- JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Materialize CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.tabs').tabs();
+            $('.sidenav').sidenav();
+            $(".dropdown-trigger").dropdown();
+            $('.fixed-action-btn').floatingActionButton(
+            );
+        })
+    </script>
+</body>
+</html>

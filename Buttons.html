@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- CSS Here!-->
+     <link rel="stylesheet" href="style.css">
+    
+     <!--Materialize CDN-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ 
+      <!-- Fontawesome icons kit-->
+      <script src="https://kit.fontawesome.com/f1afa0846d.js" crossorigin="anonymous"></script>
+ 
+      <!-- Fontawesome icons CDN-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+</head>
+<body>
+    <!--Fixed Nav-->
+    <div class="nav-fixed">
+        <nav class="cyan">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="" class="brand-logo center">
+                        
+                        <i class="fa-brands fa-slack"></i>
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="active"><a href="" >Sass</a></li>
+                        <li><a href="">Components</a></li>
+                        <li><a class="dropdown-trigger" data-target="dropdown1">Dropdown<i class="fa-solid fa-caret-down" style="padding-left:20px"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+                <!-- Dropdown Structure-->
+        <ul id="dropdown1" class="dropdown-content pink">
+            <l1><a href="">One</a></l1>
+            <l1><a href="">Two</a></l1>
+            <l1><a href="">Three</a></l1>
+        </ul>
+                <!--  -->
+        
+    </div>
+    
+    <div class="container">
+        <h3 class="red-text">Fixed Navbar, Side Nav and Dropdown</h3>
+        <br>
+        <div class="divider"></div>
+        <br>
+        <h1 class="red-text">Button</h1>
+        <p>There are 3 main button types described in material design. The raised button is a standard button that signify actions and seek to give depth to a mostly flat page. The floating circular action button is meant for very important functions. Flat buttons are usually used within elements that already have depth like cards or modals.</p>
+        <h3 class="purple-text">Raised</h3>
+        <a href="" class="waves-effect waves-light btn">Raised</a>
+        <a class="waves-effect waves-light btn"><i class="fa-brands fa-slack left"></i>raised</a>
+        <a class="waves-effect waves-light btn"><i class="fa-brands fa-slack right"></i>raised</a>
+        <h3 class="pink-text">Floating</h3>
+        <a href="" class="btn-floating waves-effect waves-light red"><i class="fa-brands fa-slack right"></i>add</a>
+        <!-- Flat -->
+        <h3 class="pink-text">Flat</h3>
+        <p>Flat buttons are used to reduce excessive layering. For example, flat buttons are usually used for actions within a card or modal so there aren't too many overlapping shadows.</p>
+        <a class="waves-effect waves-teal btn-flat">Flat</a>
+        <!-- Submit Button -->
+        <h3 class="cyan-text">Submit Button</h3>
+        <p>When you use a button to submit a form, instead of using a input tag, use a button tag with a type submit</p>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="fa-solid fa-paper-plane right"></i></button>
+        <h3 class="cyan-text">Large and Small</h3>
+        <!-- This Button is Large -->
+        <a class="waves-effect waves-light btn-large"><i class="fa-brands fa-slack right"></i>raised</a>
+        <!-- This Button is Normal -->
+        <a class="waves-effect waves-light btn"><i class="fa-brands fa-slack right"></i>raised</a>
+        <!-- This Button is small -->
+        <a class="waves-effect waves-light btn-small"><i class="fa-brands fa-slack right"></i>raised</a>
+        <!-- Disabled -->
+        <h3 class="cyan-text">Submit Button</h3>
+        <p>This style can be applied to all button types</p>
+        <a href="" class="btn-large disabled">Button Disable</a>
+    </div>
+
+    <div style="height: 1000px"></div>
+    <!-- JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Materialize CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.tabs').tabs();
+            $('.sidenav').sidenav();
+            $(".dropdown-trigger").dropdown();
+            $('.fixed-action-btn').floatingActionButton();
+        })
+    </script>
+</body>
+</html>
